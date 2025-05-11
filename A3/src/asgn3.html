@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <div id="game-stats">Quest: Delete 10 fences and/or trees to make the animal dance! Trees/Fences Deleted: 0</div>
+  <style>
+  #game-stats {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: white;
+    font-family: monospace;
+    font-size: 16px;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 6px 10px;
+    border-radius: 5px;
+    pointer-events: none; 
+  }
+</style>
+  <head>
+    <meta charset="utf-8" />
+    <title>Draw a point (1)</title>
+  </head>
+
+  <body onload="main()">
+    <canvas id="webgl" width="800" height="800">
+    Please use a browser that supports "canvas"
+    </canvas>
+  
+    <p> 
+    <!--
+    <button type="button" id="green">Green</button>
+    <button type="button" id="red">Red</button>
+    --> 
+    <button type="button" id="pointButton">IGNORE</button>
+    <button type="button" id="triangleButton">IGNORE</button>
+    <button type="button" id="circleButton">IGNORE</button>
+
+    <br>
+    <button type="button" id="clearButton">IGNORE</button>
+    </p>
+    <p>
+    IGNORE <input type ="range" min="0" max="100" value="100" class="slider" id="redSlide">
+    IGNORE <input type ="range" min="0" max="100" value="100" class="slider" id="greenSlide">
+    IGNORE <input type ="range" min="0" max="100" value="100" class="slider" id="blueSlide">
+    
+    </p>
+
+    <p>
+    IGNORE <input type ="range" min="5" max="40" value="0" class="slider" id="sizeSlide">
+    IGNORE <input type ="range" min="10" max="40" value="10" class="slider" id="segSlide">
+
+   
+
+  <p id="fps"></p>
+  
+    
+    <script src="../lib/webgl-utils.js"></script>
+    <script src="../lib/webgl-debug.js"></script>
+    <script src="../lib/cuon-utils.js"></script>
+    <script src="../lib/cuon-matrix-cse160.js"></script>
+    <script src="Triangle.js"></script>
+    <script src="Circle.js"></script>
+    <script src="Point.js"></script>
+    <script src="Cube.js"></script>
+    <script src="Cylinder.js"></script>w
+    <script src="Camera.js"></script>
+    <script src="asgn3.js"></script>
+  </body>
+</html>
